@@ -42,9 +42,7 @@ describe("issue tests", () => {
     })
     test("delete issue", async () => {
         try {
-            const response = await axios.delete(url, {
-                data: queryObject,
-            })
+            const response = await axios.delete(`${url}/3`)
 
             expect(response.status).toBe(200)
         } catch (error) {

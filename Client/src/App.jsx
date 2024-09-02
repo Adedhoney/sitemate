@@ -1,29 +1,41 @@
 import { useState } from "react"
+import {
+    createIssue,
+    getIssues,
+    updateIssue,
+    deleteIssue,
+} from "./api"
 import "./App.css"
+
+const queryObject = {
+    id: 3,
+    title: "Third issue",
+    description: "Issues one and two already exists",
+}
 
 const methods = [
     {
         method: "create",
         _fn: () => {
-            createIssue()
+            createIssue(queryObject)
         },
     },
     {
         method: "read",
         _fn: () => {
-            getIssues()
+            getIssues(queryObject)
         },
     },
     {
         method: "update",
         _fn: () => {
-            updateIssue()
+            updateIssue(queryObject)
         },
     },
     {
         method: "delete",
         _fn: () => {
-            deleteIssue()
+            deleteIssue(queryObject)
         },
     },
 ]

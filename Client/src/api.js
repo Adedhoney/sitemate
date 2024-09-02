@@ -17,6 +17,7 @@ const createIssue = async (issue) => {
 const getIssues = async () => {
     try {
         const response = await axios.get(config.BACKEND_URL)
+        console.log(response.data)
         return response.data
     } catch (error) {
         console.log(error)
@@ -32,9 +33,7 @@ const updateIssue = async (issue) => {
 }
 const deleteIssue = async (issue) => {
     try {
-        await axios.delete(config.BACKEND_URL, {
-            data: issue,
-        })
+        await axios.delete(`${config.BACKEND_URL}/2`)
     } catch (error) {
         console.log(error)
     }

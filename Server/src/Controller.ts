@@ -31,8 +31,8 @@ export class AppController {
         req: Request,
         res: Response
     ) => {
-        let issue = req.body.data
-        console.log(issue)
+        let { id } = req.params
+        console.log(id)
         res.send("Deleted")
     }
 }
