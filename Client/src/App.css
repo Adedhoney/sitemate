@@ -1,0 +1,50 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    color: #020617;
+}
+
+.buttons-tray {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-tray button {
+    padding: 8px 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    outline: none;
+    background-color: hsl(100, 100, 100);
+}
+
+.headings {
+}
+
+.issues-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.issue-card {
+    display: block;
+    max-width: 640px;
+    margin: auto;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding: 8px;
+}
+
+.issue-card h5 {
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-weight: bold;
+}
